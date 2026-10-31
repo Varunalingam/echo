@@ -1,0 +1,30 @@
+{
+  "name": "echo",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A 2D side scroller game, where the player needs to reach the exit to end the simulation.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "oxfmt && oxlint --fix",
+    "test": "vitest",
+    "test:browser": "vitest --config=vitest.browser.config.ts"
+  },
+  "dependencies": {
+    "phaser": "^4.2.1"
+  },
+  "devDependencies": {
+    "@vitest/browser-playwright": "^5.0.5",
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.90.0",
+    "oxlint-tsgolint": "^7.0.2005",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true
+  }
+}
